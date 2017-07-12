@@ -1,10 +1,23 @@
 package com.example.ujjwalkhaitan.jktlog;
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.content.Intent;
+
 public class second extends AppCompatActivity {
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-super.onCreate(savedInstanceState);
-setContentView(R.layout.activity_second);
-}
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second);
+    }
+
+    public void onButtonClick1(View view){
+
+        Intent gotonextactivity1 = new Intent(second.this,third.class);
+        startActivity(gotonextactivity1);
+    }
+
 }
